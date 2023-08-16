@@ -25,7 +25,7 @@ public class Mortgage {
 
     // Value of the property for which the mortgage is applied.
     @Column(name = "property_value")
-    private String property_value;
+    private int property_value;
 
     // Interest rate for the mortgage.
     @Column(name = "mortgage_rate_percent")
@@ -107,11 +107,11 @@ public class Mortgage {
         this.product_type = product_type;
     }
 
-    public String getProperty_value() {
+    public int getProperty_value() {
         return property_value;
     }
 
-    public void setProperty_value(String property_value) {
+    public void setProperty_value(int property_value) {
         this.property_value = property_value;
     }
 
